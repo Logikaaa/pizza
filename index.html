@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #7c7c7c;
+            padding: 0;
+        }
+
+        .logo {
+            width: 100%;
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #7c7c7c;
+            flex-wrap: wrap;
+            padding: 10px 0;
+        }
+
+        nav a {
+            background: red;
+            color: bisque;
+            text-decoration: none;
+            font-size: 24px;
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        main {
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 40px 0 20px;
+        }
+
+        .map {
+            width: 90%;
+            max-width: 800px;
+            margin-bottom: 60px;
+        }
+
+        .menu-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .menu-item {
+            border: 2px solid #ccc;
+            border-radius: 20px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .menu-item .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .menu-item p {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .menu-item input {
+            font-size: 16px;
+            padding: 5px;
+            width: 80%;
+        }
+
+        .menu-item button {
+            background-color: green;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .cart {
+            margin-top: 60px;
+            font-size: 24px;
+        }
+
+        .cart input {
+            font-size: 18px;
+            padding: 8px;
+            margin: 10px;
+        }
+
+        .cart button {
+            background-color: darkblue;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .footer .cart p {
+            font-size: 24px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header id="top">
+        <img class="logo" src="https://media.istockphoto.com/id/905878436/ru/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F/%D1%81%D0%B2%D0%B5%D1%82%D0%BB%D0%BE-%D0%BA%D0%BE%D1%80%D0%B8%D1%87%D0%BD%D0%B5%D0%B2%D1%8B%D0%B9-%D0%BF%D0%B8%D1%86%D1%86%D0%B0-%D0%BB%D0%B5%D0%BD%D1%82%D0%B0-%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80.jpg?s=612x612&w=0&k=20&c=f2OQc2cuAGM4Rf7b-F1EMuTneUuzcj2ZlLLk2qXA5NM=" alt="Pizza Logo">
+        <nav>
+            <a href="index.html">Меню</a>
+            <a href="about.html">Відгуки</a>
+        </nav>
+    </header>
+
+    <main>
+        <div style="text-align: center"><h1>Ми знаходимося тут</h1>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80550.33270772775!2d26.363665631896282!3d50.88304754638046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472f485004c70891%3A0x5557f0824d95eb89!2z0JrQvtGB0YLQvtC_0ZbQu9GMLCDQoNGW0LLQvdC10L3RgdGM0LrQsCDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1suk!2sua!4v1743850907606!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <h1 style="text-align: center">Меню</h1>
+        <div class="menu-list">
+            <div class="menu-item">
+                <img src="https://media.istockphoto.com/id/1198193294/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%B2%D0%BA%D1%83%D1%81%D0%BD%D0%B0%D1%8F-%D0%BF%D0%B8%D1%86%D1%86%D0%B0-%D0%BD%D0%B0-%D0%B1%D0%B5%D0%BB%D0%BE%D0%BC.jpg?s=612x612&w=0&k=20&c=Xc-TmHE54qLCysjK0AyW4JeeTyCHo-4jhFptXxLHLqY=" alt="Сирна піца">
+                <div class="info">
+                    <p>Ціна: 250 грн</p>
+                    <input type="number" min="1" placeholder="Кількість">
+                    <button>Замовити</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://media.istockphoto.com/id/966844364/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%BF%D0%B8%D1%86%D1%86%D0%B0-%D0%BF%D0%B5%D0%BF%D0%BF%D0%B5%D1%80%D0%BE%D0%BD%D0%B8-%D0%BD%D0%B0-%D0%B1%D0%B5%D0%BB%D0%BE%D0%BC-%D1%84%D0%BE%D0%BD%D0%B5.jpg?s=612x612&w=0&k=20&c=kPF7-4kOEjfKFxi6j3kMt4Io1z5xRERVov5-zpCLHOE=" alt="Піца Пепероні">
+                <div class="info">
+                    <p>Ціна: 200 грн</p>
+                    <input type="number" min="1" placeholder="Кількість">
+                    <button>Замовити</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://media.istockphoto.com/id/182659367/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%81%D1%80%D0%B5%D0%B4%D0%B8%D0%B7%D0%B5%D0%BC%D0%BD%D0%BE%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B9-%D0%BF%D0%B8%D1%86%D1%86%D0%B0-01.jpg?s=612x612&w=0&k=20&c=qxphpKjLcHCe14aFur8q7VHrJcNtqdzpEqraZSQVZQ0=" alt="Середземноморська піца">
+                <div class="info">
+                    <p>Ціна: 250 грн</p>
+                    <input type="number" min="1" placeholder="Кількість">
+                    <button>Замовити</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://media.istockphoto.com/id/1179103792/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%BC%D0%B0%D1%80%D0%B3%D0%B0%D1%80%D0%B8%D1%82%D0%B0-%D0%BF%D0%B8%D1%86%D1%86%D0%B0-%D1%81-%D0%B2%D0%B5%D1%82%D1%87%D0%B8%D0%BD%D0%BE%D0%B9-%D0%B8-%D0%BF%D0%B5%D1%80%D1%86%D0%B5%D0%BC-%D0%BD%D0%B0-%D0%B1%D0%B5%D0%BB%D0%BE%D0%BC-%D1%84%D0%BE%D0%BD%D0%B5.jpg?s=612x612&w=0&k=20&c=S8g_1yg8rzGKTX901AF4WI4iFkhQvf3S55XW86ev1rI=" alt="Піца Маргарита">
+                <div class="info">
+                    <p>Ціна: 200 грн</p>
+                    <input type="number" min="1" placeholder="Кількість">
+                    <button>Замовити</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <a href="#top">До верху</a>
+    </footer>
+</body>
+</html>
